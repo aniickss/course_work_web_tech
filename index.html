@@ -17,11 +17,10 @@
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
 
-    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-    <header class="fixed w-full top-0 flex gap-2 bg-[#8b0000] justify-between px-5 rounded-b-[32px]">
+    <header class="fixed z-10 w-full top-0 flex gap-2 bg-[#8b0000] justify-between px-5 rounded-b-[32px]">
         <a href="/" class="logo text-[#DDDBC7] uppercase font-bold flex gap-2 py-2">
             Зантедескія
             <div class="rounded-full bg-[#DDDBC7] w-6 h-6">
@@ -54,7 +53,7 @@
         </section>
 
         <section id="about-us"
-            class="hero border-2 border-[darkred] bg-[#DDDBC7] text-[darkred] rounded-xl flex flex-col gap-3 justify-center my-5">
+            class="hero p-5 border-2 border-[darkred] bg-[#DDDBC7] text-[darkred] rounded-xl flex flex-col gap-3 justify-center my-5">
             <h2 class="font-bold text-[24px] leading-[0.9] text-center uppercase">Про нас</h2>
 
             <ul class="[&_p]:text-justify [&_span]:font-bold">
@@ -142,120 +141,167 @@
             <h2 class="font-bold text-[24px] leading-[0.9] text-center text-[darkred]">Послуги</h2>
 
             <ul
-                class="flex flex-col sm:flex-row flex-wrap w-full justify-center gap-3 w-[396px] md:[&>li]:w-[calc((100%-24px)/2)] lg:[&>li]:w-[calc((100%-48px)/3)] [&>li]:bg-[#DDDBC7] [&>li]:gap-2 [&>li]:rounded-xl [&>li]:border-2 [&>li]:border-[darkred] [&>li]:px-3 [&>li]:py-5 [&>li]:flex [&>li]:flex-col [&>li]:items-center [&>li>h3]:text-lg [&>li>h3]:font-bold">
+            class="m-auto max-w-[1126px] [&_h3]:text-center [&_h3]:text-xl [&_h3]:mt-2 [&_img]:w-[calc((100%))] [&_img]:rounded-xl flex max-md:flex-col flex-wrap items-center gap-x-6 gap-y-12 [&_li]:w-[396px] md:[&_li]:w-[calc((100%-24px)/2)] lg:[&_li]:w-[calc((100%-48px)/3)]">
+            <li class="services-card">
+              <a href="#" class="services-link">
+                <div class="overlay">
+                  <img src="./images/obshchiy-massazh-tela-1.jpg" alt="Класичний масаж" height="280" width="" />
+                  <p class="text-overlay">
+                    Класичний масаж — популярний вид масажу, спрямований на оздоровлення організму. Він опрацьовує м'язи, стимулює кровообіг, покращує рухливість суглобів і знімає м'язове напруження. Це чудовий спосіб відновити сили та поліпшити самопочуття після навантажень.
+                  </p>
+                </div>
+                <div>
+                  <h3>Класичний масаж</h3>
+                </div>
+              </a>
+            </li>
+    
+            <li class="services-card">
+              <a href="#" class="services-link">
+                <div class="overlay">
+                  <img src="./images/antistressoviy-massage-780-min.jpg" alt="Антистресовий масаж" height="280" />
+                  <p class="text-overlay">
+                    Антистресовий масаж допомагає заспокоїти нервову систему, зняти емоційне напруження і втому. Під час процедури використовуються ефірні масла, які покращують настрій і дарують відчуття гармонії. Масаж спрямований на стимуляцію точок, що відповідають за зняття стресу та розслаблення.
+                  </p>
+                </div>
+                <div>
+                  <h3>Антистресовий масаж</h3>
+                </div>
+              </a>
+            </li>
+    
+            <li class="services-card">
+              <a href="#" class="services-link">
+                <div class="overlay">
+                  <img src="./images/stone.jpg" alt="Стоун-терапія" height="280" />
+                  <p class="text-overlay">
+                    Стоун-терапія — це давня методика масажу з використанням гарячих каменів. Камені допомагають глибоко прогріти м’язи, знімаючи спазми і напруження. Процедура покращує енергетичний баланс, знімає втому та підвищує загальний тонус організму. Ідеальний вибір для тих, хто хоче повністю розслабитися та відновити внутрішню гармонію.
+                  </p>
+                </div>
+                <div>
+                  <h3>Стоун-терапія</h3>
+                </div>
+              </a>
+            </li>
+    
+            <li class="services-card">
+              <a href="#" class="services-link">
+                <div class="overlay">
+                  <img src="./images/oil.jpg" alt="Ароматерапія" height="280" />
+                  <p class="text-overlay">
+                    Ароматерапія — це комплекс процедур з використанням натуральних ефірних масел, які допомагають заспокоїти нервову систему, покращити настрій і надати шкірі здорового вигляду. Процедура підбирається індивідуально для кожного клієнта, залежно від його потреб і стану організму. Масла, використовувані під час процедур, проникають через шкіру і вдихаються, що дає подвійний ефект.
+                  </p>
+                </div>
+                <div>
+                  <h3>Ароматерапія</h3>
+                </div>
+              </a>
+            </li>
+    
+            <li class="services-card">
+              <a href="#" class="services-link">
+                <div class="overlay">
+                  <img src="./images/Masazhne-obgortannya-dlya-tila.jpg" alt="Обгортання для тіла" height="280" />
+                  <p class="text-overlay">
+                    Обгортання — ефективна процедура для покращення стану шкіри, виведення токсинів і зволоження. Ми використовуємо лише натуральні інгредієнти, як-от водорості, грязі, шоколад та ефірні олії, для максимального догляду й ефекту.
+                  </p>
+                </div>
+                <div>
+                  <h3>Обгортання для тіла</h3>
+                </div>
+              </a>
+            </li>
+    
+    
+            <li class="services-card">
+              <a href="#" class="services-link">
+                <div class="overlay">
+                  <img src="./images/728x546_1_e35e6a7ee99c27909e16c758edb18484@1706x1280_0xac120003_5068140451657636965.jpeg" alt="Антицелюлітний масаж" height="280" />
+                  <p class="text-overlay">
+                    Антицелюлітний масаж — це техніка, що бореться з целюлітом і покращує тонус шкіри. Глибоке опрацювання тканин стимулює кровообіг та лімфодренаж, сприяючи розщепленню жиру й покращенню текстури шкіри. Регулярні сеанси допомагають зменшити целюліт і підвищити пружність шкіри.
+                  </p>
+                </div>
+                <div>
+                  <h3>Антицелюлітний масаж</h3>
+                </div>
+              </a>
+            </li>
+    
+    
+            <li class="services-card">
+              <a href="#" class="services-link">
+                <div class="overlay">
+                  <img src="./images/1298original1417777241.jpg" alt="Спа для обличчя" height="280" />
+                  <p class="text-overlay">
+                    Комплексний догляд за шкірою обличчя включає очищення, зволоження, живлення та омолодження. Наші спеціалісти використовують професійну косметику, яка відповідає типу шкіри клієнта, щоб досягти максимальних результатів. Ця процедура не лише покращує зовнішній вигляд, але й сприяє розслабленню і відновленню після стресу.
+                  </p>
+                </div>
+                <div>
+                  <h3>Спа для обличчя</h3>
+                </div>
+              </a>
+          
+          
+    
+          <li class="services-card">
+            <a href="#" class="services-link">
+              <div class="overlay">
+                <img src="./images/spa_relax2-610x610.jpg" alt="Спа-програми для пар" height="280" />
+                <p class="text-overlay">
+                    Романтичні спа-програми для пар — це особливий спосіб провести час разом в атмосфері релаксації та гармонії. Програма включає масаж для двох, аромапроцедури та релаксацію в затишній атмосфері нашого салону. Це чудовий подарунок для себе та вашої половинки, який допоможе вам насолодитися спокоєм та близькістю один з одним.
+                </p>
+              </div>
+              <div>
+                <h3>Спа-програми для пар</h3>
+              </div>
+            </a>
+      
+        
+    
+        <li class="services-card">
+            <a href="#" class="services-link">
+              <div class="overlay">
+                <img src="./images/vvJRnuepUZBnRaAUVxy6ZuCpEvMH8kei.jpg" alt="Сауна та хамам" height="280" />
+                <p class="text-overlay">
+                    Наш спа-салон пропонує відвідування сауни або хамаму — традиційних парових кімнат, які сприяють виведенню токсинів, покращенню кровообігу та зняттю м’язової напруги. Гаряче повітря та пар допомагають глибоко очистити шкіру, що робить ці процедури чудовим доповненням до масажу чи інших спа-процедур.
+                </p>
+              </div>
+              <div>
+                <h3>Сауна та хамам</h3>
+              </div>
+            </a>
+        
+        
+    
+        <li class="services-card">
+            <a href="#" class="services-link">
+              <div class="overlay">
+                <img src="./images/francuzskij-manikjur-i-pedikjur-10.jpg" alt="Манікюр та педикюр" height="280" />
+                <p class="text-overlay">
+                    Професійний манікюр та педикюр в нашому спа-салоні — це не лише догляд за нігтями, але й можливість розслабитися та отримати задоволення від процесу. Ми використовуємо високоякісні засоби та сучасні техніки, щоб забезпечити бездоганний результат. Ви отримаєте доглянуті руки та ноги, а також відчуття свіжості та легкості.
+                </p>
+              </div>
+              <div>
+                <h3>Манікюр та педикюр</h3>
+              </div>
+            </a>
+        
+        
+    
+        <li class="services-card">
+            <a href="#" class="services-link">
+              <div class="overlay">
+                <img src="./images/choko.jpg" alt="Шоколадне обгортання" height="280" />
+                <p class="text-overlay">
+                    Шоколадне обгортання — це справжнє задоволення для вашого тіла та душі. Шоколад містить корисні речовини, які живлять та зволожують шкіру, надають їй пружності та ніжності. Під час цієї процедури ви занурюєтесь у стан глибокого розслаблення, відчуваючи приємний аромат шоколаду і ніжний догляд за шкірою.
+                </p>
+              </div>
+              <div>
+                <h3>Шоколадне обгортання</h3>
+              </div>
+            </a>
+        </ul>
 
-                <li>
-                    <img src="https://www.spasalon.kiev.ua/photos/1/vechernyaya-ukladka1.jpg" width=100 height=100
-                        alt="Класичний масаж">
-                    <h3>Класичний масаж</h3>
-                    <p>Класичний масаж — це один з найпопулярніших видів масажу, спрямований на загальне оздоровлення організму. Техніка передбачає опрацювання м'язів, стимулює кровообіг, покращує рухливість суглобів і допомагає зняти м'язове напруження. Це чудовий спосіб відновити сили та поліпшити самопочуття після важкого робочого дня або фізичного навантаження.</p>
-                    <div class="mx-auto h-[40px]"><button type="button" data-modal-open
-                            class="m-auto bg-[#8b0000] hover:bg-[#be2b2b] focus:bg-[#be2b2b] text-[#DDDBC7] rounded-[32px] p-2 w-[88px] data-modal-open">Записатися</button>
-                    </div>
-
-                </li>
-                <li>
-                    <img src="https://www.spasalon.kiev.ua/photos/1/vechernyaya-ukladka1.jpg" width=100 height=100
-                        alt="Антистресовий масаж">
-                    <h3>Антистресовий масаж</h3>
-                    <p>Антистресовий масаж допомагає заспокоїти нервову систему, зняти емоційне напруження і втому. Під час процедури використовуються ефірні масла, які покращують настрій і дарують відчуття гармонії. Масаж спрямований на стимуляцію точок, що відповідають за зняття стресу та розслаблення.</p>
-                    <div class="mx-auto h-[40px]"><button type="button" data-modal-open
-                            class="m-auto bg-[#8b0000] hover:bg-[#be2b2b] focus:bg-[#be2b2b] text-[#DDDBC7] rounded-[32px] p-2 w-[88px] data-modal-open">Записатися</button>
-                    </div>
-
-                </li>
-                <li>
-                    <img src="https://www.spasalon.kiev.ua/photos/1/vechernyaya-ukladka1.jpg" width=100 height=100
-                        alt="Стоун-терапія">
-                    <h3>Стоун-терапія</h3>
-                    <p>Стоун-терапія — це давня методика масажу з використанням гарячих каменів. Камені допомагають глибоко прогріти м’язи, знімаючи спазми і напруження. Процедура покращує енергетичний баланс, знімає втому та підвищує загальний тонус організму. Ідеальний вибір для тих, хто хоче повністю розслабитися та відновити внутрішню гармонію.</p>
-                    <div class="mx-auto h-[40px]"><button type="button" data-modal-open
-                            class="m-auto bg-[#8b0000] hover:bg-[#be2b2b] focus:bg-[#be2b2b] text-[#DDDBC7] rounded-[32px] p-2 w-[88px] data-modal-open">Записатися</button>
-                    </div>
-
-                </li>
-                <li>
-                    <img src="https://www.spasalon.kiev.ua/photos/1/vechernyaya-ukladka1.jpg" width=100 height=100
-                        alt="Ароматерапія">
-                    <h3>Ароматерапія</h3>
-                    <p>Ароматерапія — це комплекс процедур з використанням натуральних ефірних масел, які допомагають заспокоїти нервову систему, покращити настрій і надати шкірі здорового вигляду. Процедура підбирається індивідуально для кожного клієнта, залежно від його потреб і стану організму. Масла, використовувані під час процедур, проникають через шкіру і вдихаються, що дає подвійний ефект.</p>
-                    <div class="mx-auto h-[40px]"><button type="button" data-modal-open
-                            class="m-auto bg-[#8b0000] hover:bg-[#be2b2b] focus:bg-[#be2b2b] text-[#DDDBC7] rounded-[32px] p-2 w-[88px] data-modal-open">Записатися</button>
-                    </div>
-
-                </li>
-                <li>
-                    <img src="https://www.spasalon.kiev.ua/photos/1/vechernyaya-ukladka1.jpg" width=100 height=100
-                        alt="Обгортання для тіла">
-                    <h3>Обгортання для тіла</h3>
-                    <p>Обгортання — це ефективна процедура, яка допомагає покращити стан шкіри, вивести токсини з організму та зробити шкіру більш пружною і зволоженою. Ми використовуємо лише натуральні інгредієнти — морські водорості, грязі, шоколад та ефірні масла, щоб забезпечити найкращий догляд і максимальний ефект для вашого тіла.</p>
-                    <div class="mx-auto h-[40px]"><button type="button" data-modal-open
-                            class="m-auto bg-[#8b0000] hover:bg-[#be2b2b] focus:bg-[#be2b2b] text-[#DDDBC7] rounded-[32px] p-2 w-[88px] data-modal-open">Записатися</button>
-                    </div>
-
-                </li>
-                <li>
-                    <img src="https://www.spasalon.kiev.ua/photos/1/vechernyaya-ukladka1.jpg" width=100 height=100
-                        alt="Антицелюлітний масаж">
-                    <h3>Антицелюлітний масаж</h3>
-                    <p>Антицелюлітний масаж — це спеціалізована техніка, спрямована на боротьбу з проявами целюліту та покращення тонусу шкіри. За допомогою глибокого опрацювання підшкірних тканин, масаж стимулює кровообіг та лімфодренаж, що допомагає розщеплювати жирові відкладення і покращує текстуру шкіри. Регулярне проведення антицелюлітного масажу дозволяє досягти помітного зменшення целюліту і підвищити пружність шкіри.</p>
-                    <div class="mx-auto h-[40px]"><button type="button" data-modal-open
-                            class="m-auto bg-[#8b0000] hover:bg-[#be2b2b] focus:bg-[#be2b2b] text-[#DDDBC7] rounded-[32px] p-2 w-[88px] data-modal-open">Записатися</button>
-                    </div>
-
-                </li>
-                  <li>
-                    <img src="https://www.spasalon.kiev.ua/photos/1/vechernyaya-ukladka1.jpg" width=100 height=100
-                        alt="Спа для обличчя">
-                    <h3>Спа для обличчя</h3>
-                    <p>Комплексний догляд за шкірою обличчя включає очищення, зволоження, живлення та омолодження. Наші спеціалісти використовують професійну косметику, яка відповідає типу шкіри клієнта, щоб досягти максимальних результатів. Ця процедура не лише покращує зовнішній вигляд, але й сприяє розслабленню і відновленню після стресу.</p>
-                    <div class="mx-auto h-[40px]"><button type="button" data-modal-open
-                            class="m-auto bg-[#8b0000] hover:bg-[#be2b2b] focus:bg-[#be2b2b] text-[#DDDBC7] rounded-[32px] p-2 w-[88px] data-modal-open">Записатися</button>
-                    </div>
-
-                </li>
-                  <li>
-                    <img src="https://www.spasalon.kiev.ua/photos/1/vechernyaya-ukladka1.jpg" width=100 height=100
-                        alt="Спа-програми для пар">
-                    <h3>Спа-програми для пар</h3>
-                    <p>Романтичні спа-програми для пар — це особливий спосіб провести час разом в атмосфері релаксації та гармонії. Програма включає масаж для двох, аромапроцедури та релаксацію в затишній атмосфері нашого салону. Це чудовий подарунок для себе та вашої половинки, який допоможе вам насолодитися спокоєм та близькістю один з одним.</p>
-                    <div class="mx-auto h-[40px]"><button type="button" data-modal-open
-                            class="m-auto bg-[#8b0000] hover:bg-[#be2b2b] focus:bg-[#be2b2b] text-[#DDDBC7] rounded-[32px] p-2 w-[88px] data-modal-open">Записатися</button>
-                    </div>
-
-                </li>
-                  <li>
-                    <img src="https://www.spasalon.kiev.ua/photos/1/vechernyaya-ukladka1.jpg" width=100 height=100
-                        alt="Сауна та хамам">
-                    <h3>Сауна та хамам</h3>
-                    <p>Наш спа-салон пропонує відвідування сауни або хамаму — традиційних парових кімнат, які сприяють виведенню токсинів, покращенню кровообігу та зняттю м’язової напруги. Гаряче повітря та пар допомагають глибоко очистити шкіру, що робить ці процедури чудовим доповненням до масажу чи інших спа-процедур.</p>
-                    <div class="mx-auto h-[40px]"><button type="button" data-modal-open
-                            class="m-auto bg-[#8b0000] hover:bg-[#be2b2b] focus:bg-[#be2b2b] text-[#DDDBC7] rounded-[32px] p-2 w-[88px] data-modal-open">Записатися</button>
-                    </div>
-
-                </li>
-                  <li>
-                    <img src="https://www.spasalon.kiev.ua/photos/1/vechernyaya-ukladka1.jpg" width=100 height=100
-                        alt="Манікюр та педикюр">
-                    <h3>Манікюр та педикюр</h3>
-                    <p>Професійний манікюр та педикюр в нашому спа-салоні — це не лише догляд за нігтями, але й можливість розслабитися та отримати задоволення від процесу. Ми використовуємо високоякісні засоби та сучасні техніки, щоб забезпечити бездоганний результат. Ви отримаєте доглянуті руки та ноги, а також відчуття свіжості та легкості.</p>
-                    <div class="mx-auto h-[40px]"><button type="button" data-modal-open
-                            class="m-auto bg-[#8b0000] hover:bg-[#be2b2b] focus:bg-[#be2b2b] text-[#DDDBC7] rounded-[32px] p-2 w-[88px] data-modal-open">Записатися</button>
-                    </div>
-
-                </li>
-                 </li>
-                  <li>
-                    <img src="https://www.spasalon.kiev.ua/photos/1/vechernyaya-ukladka1.jpg" width=100 height=100
-                        alt="Шоколадне обгортання">
-                    <h3>Шоколадне обгортання</h3>
-                    <p>Шоколадне обгортання — це справжнє задоволення для вашого тіла та душі. Шоколад містить корисні речовини, які живлять та зволожують шкіру, надають їй пружності та ніжності. Під час цієї процедури ви занурюєтесь у стан глибокого розслаблення, відчуваючи приємний аромат шоколаду і ніжний догляд за шкірою.</p>
-                    <div class="mx-auto h-[40px]"><button type="button" data-modal-open
-                            class="m-auto bg-[#8b0000] hover:bg-[#be2b2b] focus:bg-[#be2b2b] text-[#DDDBC7] rounded-[32px] p-2 w-[88px] data-modal-open">Записатися</button>
-                    </div>
-
-                </li>
-            </ul>
         </section>
     </main>
 
@@ -392,6 +438,7 @@
     <script defer src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/smooth-scroll.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </body>
 
 </html>
